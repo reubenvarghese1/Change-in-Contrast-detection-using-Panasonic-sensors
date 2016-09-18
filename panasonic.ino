@@ -11,5 +11,8 @@ void loop() {
 res=analogRead(pan);
 
 Serial.println(res);
+if(res>656){
+  Serial.println("Color change detected!!");
+}
 delay(1000);
 }
